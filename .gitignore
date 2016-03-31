@@ -10,3 +10,15 @@
 .gradle/2.1/taskArtifacts/fileHashes.bin
 
 .gradle/2.1/taskArtifacts/fileSnapshots.bin
+
+.gradle/2.12/taskArtifacts/cache.properties
+
+.gradle/2.12/taskArtifacts/cache.properties.lock
+
+.gradle/2.12/taskArtifacts/fileHashes.bin
+
+.gradle/2.12/taskArtifacts/fileSnapshots.bin
+
+.gradle/2.12/taskArtifacts/outputFileStates.bin
+
+.gradle/2.12/taskArtifacts/taskArtifacts.bin
