@@ -11,16 +11,9 @@ public class HelloSpark {
         get("/loan", "application/json", (req, res) -> {
         	String principle = req.queryParams("principle");
         	String rate = req.queryParams("rate");
-        	String term = req.queryParams("term");
-        	/*String rate = "6.0";
-        	String term = "60";*/
-        	
+        	String term = req.queryParams("term");        	
         	return new Payment().setPayment(new LoanCalculator().calculatePayment(principle, rate, term));
         }, json());
-        
-        /*get("/loan", (req, res) -> {        	
-        	return new Payment().setPayment(new LoanCalculator().calculatePayment("15000","6.0","60"));
-        }, json());*/
     }
     
     static int getHerokuAssignedPort() {
