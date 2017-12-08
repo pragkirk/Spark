@@ -22,3 +22,5 @@
 .gradle/2.12/taskArtifacts/outputFileStates.bin
 
 .gradle/2.12/taskArtifacts/taskArtifacts.bin
+
+.DS_Store
