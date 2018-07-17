@@ -1,18 +1,18 @@
 To run multiple instances of the service with different .yml.
 - To build the fat jar, use:
 	gradle shadowJar
-	
+
 - To clean
 	gradle clean
 
-- Default used the jmodern.yml file so just run:	
+- Default used the jmodern.yml file so just run:
 	java -jar build/libs/loancalc.jar
-	
+
 - To run 2nd instance on a different port, run:
 	New terminal window
 	Set PORT environmental variable
 	Startup using java -jar build/libs/loancalc.jar
-	
+
 - Access the URL by doing:
 	http://localhost:9000/loan //this returns calculation based on defaults of 15000, 3.0 and 60
 	http://localhost:9000/loan?principle=10000&rate=2.5&term=48
@@ -36,11 +36,10 @@ To run multiple instances of the service with different .yml.
 	heroku login
 
 6.) Install heroku deploy plugin
-	heroku plugins:install https://github.com/heroku/heroku-deploy
+	heroku plugins:install https://github.com/heroku/heroku-cli-deploy
 
 7.) Create heroku app (be sure to see the app name)
-	heroke create
+	heroku create
 
 8.) Deploy executable jar to heroku using app name from step 7
-	heroku deploy:jar --jar build/libs/loancalc.jar --app <<app name from 7>> -i dwheroku.yml
-
+	heroku deploy:jar --jar build/libs/loancalc.jar --app <<app name from 7>>
